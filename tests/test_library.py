@@ -10,6 +10,8 @@ from src.library import (
     Librarian,
     Library,
 )
+
+
 def test_book_initially_available():
     book = Book("Тестовая книга", "Автор", 2020)
     assert book.is_available() is True
