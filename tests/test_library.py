@@ -1,3 +1,8 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.library import (
     Book,
     PrintedBook,
@@ -5,7 +10,6 @@ from src.library import (
     Librarian,
     Library,
 )
-
 def test_book_initially_available():
     book = Book("Тестовая книга", "Автор", 2020)
     assert book.is_available() is True
