@@ -1,12 +1,10 @@
 from src.library import (
     Book,
     PrintedBook,
-    EBook,
     User,
     Librarian,
     Library,
 )
-
 
 def test_book_initially_available():
     book = Book("Тестовая книга", "Автор", 2020)
